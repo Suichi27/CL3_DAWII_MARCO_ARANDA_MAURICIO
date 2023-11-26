@@ -10,6 +10,7 @@ import { NotasComponent } from './dashboard/notas/notas.component';
 import { EstacionamientoComponent } from './dashboard/estacionamiento/estacionamiento.component';
 import { MaterialModule } from './angular-material/material/material.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule,
     RouterModule.forRoot([
       {path: 'dashboard',component:DashboardComponent,
       children:[

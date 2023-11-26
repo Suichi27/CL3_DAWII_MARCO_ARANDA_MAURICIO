@@ -1,1 +1,19 @@
-<p>estacionamiento works!</p>
+<div class="card">
+    <div class="card-header">
+     Estacionamiento
+    </div>
+    <div class="card-body">
+      
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ingrese Horas con minutos usados (Formato horas.minutos)</label>
+            <input type="text"  [(ngModel)]="pago.hora"  class="form-control" id="txt1" >
+          </div>
+     
+          <div>
+            <button type="button" (click)="calcular()" class="btn btn-primary">Calcular</button>
+            <div class="alert alert-primary" role="alert">
+                {{resultado}}
+            </div>
+          </div>
+    </div>
+  </div>
